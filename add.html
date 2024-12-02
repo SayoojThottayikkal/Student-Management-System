@@ -1,9 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+    <link rel="stylesheet" href="style.css" />
+
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:image" content="" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
     <title>Document</title>
   </head>
-  <body></body>
+  <body>
+    <section id="add">
+      <section class="wrapper">
+        <h1>Student Form</h1>
+        <div class="field">
+          <h2>Name: &ensp; <input type="text" placeholder="name.." /></h2>
+          <h2>
+            Class:&ensp;
+            <select name="class" id="classses">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="+1">+1</option>
+              <option value="+2">+2</option>
+            </select>
+          </h2>
+          <h2>Grade: &ensp;<input type="text" placeholder="Grade" /></h2>
+          <h2>Phone: &ensp;<input type="number" placeholder="Phone.." /></h2>
+          <button id="add_button">Add</button>
+          <button id="back_list">Back to List</button>
+        </div>
+      </section>
+    </section>
+    <script src="script.js"></script>
+  </body>
 </html>

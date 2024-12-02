@@ -1,0 +1,256 @@
+/* * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  vertical-align: baseline;
+  background: transparent;
+  font-weight: normal;
+  text-decoration: none;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+} */
+ol,
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "GT-Eesti", Arial, Helvetica, sans-serif;
+  font-size: 17px;
+  color: #0c0e11;
+  overflow-x: hidden;
+  min-width: 320px;
+  font-weight: 500;
+}
+p {
+  line-height: 1.6em;
+  font-size: 16px;
+  font-family: "GT-Eesti", Arial;
+  font-weight: 500;
+  color: #42526e;
+}
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Light.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Light.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Regular.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Regular.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Medium.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Medium.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "GT-Eesti";
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff2") format("woff2");
+  src: url("../fonts/GT-Eesti-Pro-Text-Bold.woff") format("woff"),
+    url("../fonts/GT-Eesti-Pro-Text-Bold.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+/*index.html css } */
+#login {
+}
+
+#login .warpper {
+  background: #dddec9;
+  height: 98vh;
+  position: relative;
+}
+
+#login .warpper #login_page {
+  padding: 40px;
+  display: inline-block;
+  position: absolute;
+  left: 34%;
+  top: 24%;
+  border-radius: 15px;
+  background: linear-gradient(45deg, #156aeb, #c80661, #0dd376, #06745a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  box-shadow: 1px 1px 6px rgba(0, 0, 0, 0.1);
+}
+
+#login .warpper #login_page .username {
+}
+#login .warpper #login_page {
+  text-align: center;
+}
+#login .warpper #login_page h1 {
+  text-align: center;
+  font-size: 30px;
+}
+
+#login .warpper #login_page h2 {
+  text-align: center;
+}
+#login .warpper #login_page .username input {
+  border-radius: 4px;
+  padding: 5px;
+  border: none;
+}
+
+#login .warpper #login_page .passsword {
+}
+
+#login .warpper #login_page .passsword input {
+  border-radius: 4px;
+  padding: 5px;
+  border: none;
+}
+
+#login .warpper #login_page .login_btn {
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 15px;
+  color: #fff;
+  background: #000;
+  font-weight: bold;
+}
+/*list html css */
+#list {
+}
+
+#list .wrapper {
+  background: #c3d3e9;
+  height: 90vh;
+  width: 100%;
+  padding: 20px;
+}
+
+#list .wrapper h1 {
+  font-weight: 700;
+  font-size: 40px;
+  text-align: center;
+}
+
+#list .wrapper .table {
+  background-color: #fff;
+}
+
+#list .wrapper .table table {
+  padding: 10px;
+  border: 1px solid black;
+  width: 100%;
+  text-align: center;
+}
+
+#list .wrapper .table table tbody tr {
+  border: 1px solid black;
+}
+
+#list .wrapper .table table thead tr th {
+  border: 1px solid black;
+}
+#list .wrapper .table table tbody tr td {
+  border: 1px solid black;
+}
+#list .wrapper .table table tfoot tr td {
+  border: 1px solid black;
+}
+#list .wrapper #add_btn {
+  margin-top: 8px;
+  display: inline-block;
+  padding: 8px 20px;
+  background: #0e5a03;
+  color: #fff;
+  font-weight: bold;
+}
+
+#list .wrapper #del_btn {
+  display: inline-block;
+  padding: 4px 10px;
+  background: #880512;
+  color: #fff;
+  font-weight: bold;
+}
+/* student form add css */
+
+#add {
+}
+
+#add .wrapper {
+  background: linear-gradient(45deg, #156aeb, #c80661, #0dd376, #06745a);
+  background-size: 400% 400%;
+  animation: gradient 15s ease infinite;
+  height: 90vh;
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+}
+
+#add .wrapper h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+#add .wrapper .field {
+  background: #a19a9a;
+  text-align: left;
+  display: inline-block;
+  padding: 40px;
+  width: 60%;
+  border-radius: 8px;
+}
+
+#add .wrapper .field h2 {
+  margin: 0, auto;
+}
+
+#add .wrapper .field h2 input {
+  margin-left: 5px;
+  margin: 0, auto;
+  padding: 10px;
+}
+#add .wrapper .field h2 select {
+  margin: 0, auto;
+  margin-left: 20px;
+  padding: 10px;
+}
+
+#add .wrapper .field #add_button {
+  padding: 8px 16px;
+  background: #ea8181;
+}
+
+#add .wrapper .field #back_list {
+  padding: 8px 16px;
+  background: #ea8181;
+}
+
+/* animation of login page  */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
