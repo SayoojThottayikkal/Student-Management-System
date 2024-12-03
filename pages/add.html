@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../css/style.css" />
 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,9 +13,11 @@
   <body>
     <section id="add">
       <section class="wrapper">
-        <h1>Student Form</h1>
+        <h1>Students Form</h1>
         <div class="field">
-          <h2>Name: &ensp; <input type="text" placeholder="name.." /></h2>
+          <h2>
+            Name: &ensp; <input type="text" placeholder="name.." id="name" />
+          </h2>
           <h2>
             Class:&ensp;
             <select name="class" id="classses">
@@ -33,13 +35,23 @@
               <option value="+2">+2</option>
             </select>
           </h2>
-          <h2>Grade: &ensp;<input type="text" placeholder="Grade" /></h2>
-          <h2>Phone: &ensp;<input type="number" placeholder="Phone.." /></h2>
-          <button id="add_button">Add</button>
-          <button id="back_list">Back to List</button>
+          <h2>
+            Grade: &ensp;<input type="text" placeholder="Grade" id="grade" />
+          </h2>
+          <h2>
+            Phone: &ensp;<input
+              type="number"
+              placeholder="Phone.."
+              id="phone"
+            />
+          </h2>
+          <button id="add_button" onclick="added()">Add</button>
+          <a href="/pages/list.html"
+            ><button id="back_list">Back to List</button></a
+          >
         </div>
       </section>
     </section>
-    <script src="script.js"></script>
+    <script src="../script.js"></script>
   </body>
 </html>

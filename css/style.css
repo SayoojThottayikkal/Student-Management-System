@@ -123,7 +123,7 @@ p {
   border: none;
 }
 
-#login .warpper #login_page a .login_btn {
+#login .warpper #login_page .login_btn {
   padding: 10px 20px;
   border-radius: 5px;
   font-size: 15px;
@@ -172,7 +172,7 @@ p {
 #list .wrapper .table table tfoot tr td {
   border: 1px solid black;
 }
-#list .wrapper a #add_btn {
+#list .wrapper #add_btn {
   margin-top: 8px;
   display: inline-block;
   padding: 8px 20px;
@@ -233,12 +233,12 @@ p {
   padding: 10px;
 }
 
-#add .wrapper .field a #add_button {
+#add .wrapper .field #add_button {
   padding: 8px 16px;
   background: #ea8181;
 }
 
-#add .wrapper .field a #back_list {
+#add .wrapper .field #back_list {
   padding: 8px 16px;
   background: #ea8181;
 }

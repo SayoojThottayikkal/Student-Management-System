@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta property="og:image" content="" />
@@ -15,12 +15,15 @@
         <div id="login_page">
           <h1>Students Details</h1>
           <h2 class="username">
-            Username: <input type="text" placeholder="username.." />
+            Username:
+            <input type="text" placeholder="username.." id="username1" />
           </h2>
-          <h2 class="passsword">
-            Passsword: <input type="text" placeholder="passsword.." />
+          <h2 class="password">
+            Password:
+            <input type="text" placeholder="password.." id="password1" />
           </h2>
-          <button class="login_btn">Login</button>
+
+          <button class="login_btn" onclick="login()">Login</button>
         </div>
       </section>
     </section>
