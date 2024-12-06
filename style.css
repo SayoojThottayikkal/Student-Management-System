@@ -108,6 +108,7 @@ p {
 #login .warpper #login_page h2 {
   text-align: center;
 }
+
 #login .warpper #login_page .username input {
   border-radius: 4px;
   padding: 5px;
@@ -242,7 +243,6 @@ p {
   padding: 8px 16px;
   background: #ea8181;
 }
-
 /* animation of login page  */
 @keyframes gradient {
   0% {
