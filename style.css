@@ -138,7 +138,7 @@ p {
 
 #list .wrapper {
   background: #c3d3e9;
-  height: 90vh;
+
   width: 100%;
   padding: 20px;
 }
@@ -149,30 +149,31 @@ p {
   text-align: center;
 }
 
-#list .wrapper .table {
-  background-color: #fff;
+#list .wrapper {
+  background-color: #d6a2a2;
 }
 
-#list .wrapper .table table {
+#list .wrapper table {
   padding: 10px;
   border: 1px solid black;
   width: 100%;
   text-align: center;
 }
 
-#list .wrapper .table table tbody tr {
+#list .wrapper table tbody tr {
   border: 1px solid black;
 }
 
-#list .wrapper .table table thead tr th {
+#list .wrapper table thead tr th {
   border: 1px solid black;
 }
-#list .wrapper .table table tbody tr td {
+#list .wrapper table tbody tr td {
   border: 1px solid black;
 }
-#list .wrapper .table table tfoot tr td {
+#list .wrapper table tfoot tr td {
   border: 1px solid black;
 }
+
 #list .wrapper a #add_btn {
   margin-top: 8px;
   display: inline-block;
@@ -182,13 +183,14 @@ p {
   font-weight: bold;
 }
 
-#list .wrapper #del_btn {
+button.del_btn {
   display: inline-block;
   padding: 4px 10px;
   background: #880512;
   color: #fff;
   font-weight: bold;
 }
+
 /* student form add css */
 
 #add {

@@ -6,39 +6,67 @@ function login() {
     window.location.href = "/pages/list.html";
     return false;
   } else {
-    // alert("Invalid Username or Password");
-    document.write("Invalid Username or Password");
+    alert("Invalid Username or Password");
   }
   console.log(login);
 }
+
 function added() {
-  let studentsList = [];
+  let studentsList = JSON.parse(localStorage.getItem("student_list")) || [];
 
   const task1 = document.getElementById("Target").value;
-  const task2 = document.getElementsByClassName("drop_down").value;
+  const task2 = document.getElementById("myselect").value;
   const task3 = document.getElementById("Target2").value;
   const task4 = document.getElementById("Target3").value;
-  const input_list = document.getElementsByClassName("input");
-  studentsList.push(task1);
-  studentsList.push(task2);
-  studentsList.push(task3);
-  studentsList.push(task4);
 
-  input_list.innerHTML = studentsList.map((list) => {
-    return ` 
-              <tr >
-                <td>${list}</td>
-                <td>${list}</td>
-                <td>${list}</td>
-                <td>${list}</td>
-                <td><button id="del_btn">Delete</button></td>
-                 </tr>
-              
-            
-    `;
-  });
-  console.log(studentsList);
+  const newStudent = { name: task1, class: task2, grade: task3, phone: task4 };
+  studentsList.push(newStudent);
+
+  localStorage.setItem("student_list", JSON.stringify(studentsList));
+
+  window.location.href = "/pages/list.html";
 }
 
-function del() {}
-function edit() {}
+document.addEventListener("DOMContentLoaded", () => {
+  const inputlist = document.getElementById("tableinput");
+
+  if (inputlist) {
+    let studentsList = JSON.parse(localStorage.getItem("student_list")) || [];
+
+    inputlist.innerHTML = `
+      <table >
+        <thead >
+          <tr>
+            <th>Name</th>
+            <th>Class</th>
+            <th>Grade</th>
+            <th>Phone</th>
+            <th>Action</th>
+          </tr>
+        </thead>
+        <tbody>
+          ${studentsList
+            .map(
+              (list, index) => `
+              <tr>
+                <td>${list.name}</td>
+                <td>${list.class}</td>
+                <td>${list.grade}</td>
+                <td>${list.phone}</td>
+                <td>
+                  <button class="del_btn" data-index="${index}">Delete</button>
+                </td>
+              </tr>
+            `
+            )
+            .join("")}
+        </tbody>
+        <tfoot>
+          <tr>
+            <td colspan="4">Total</td>
+            <td>${studentsList.length}</td>
+          </tr>
+        </tfoot>
+      </table>`;
+  }
+});
