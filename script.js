@@ -48,13 +48,13 @@ document.addEventListener("DOMContentLoaded", () => {
           ${studentsList
             .map(
               (list, index) => `
-              <tr>
+              <tr class="main">
                 <td>${list.name}</td>
                 <td>${list.class}</td>
                 <td>${list.grade}</td>
                 <td>${list.phone}</td>
                 <td>
-                  <button class="del_btn" data-index="${index}">Delete</button>
+                  <button class="del_btn" onclick="del()" data-index="${index}">Delete</button>
                 </td>
               </tr>
             `
@@ -70,3 +70,12 @@ document.addEventListener("DOMContentLoaded", () => {
       </table>`;
   }
 });
+
+function del() {
+  var deld = document.querySelectorAll(".del_btn");
+  deld.forEach((delet) => {
+    delet.onclick = () => {
+      delet.parentElement.parentElement.remove();
+    };
+  });
+}
